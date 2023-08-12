@@ -1,3 +1,4 @@
+from typing import Self
 from PyQt6.QtWidgets import *
 from my_interface import *
 import sys
@@ -15,26 +16,21 @@ class Window(Ui_MainWindow,QMainWindow):
         super().__init__()
         self.setupUi(self)
         self.show()
+        
         self.my_password = []
         self.chars = ''
         self.passwords = ''
-        self.Password_counter.valueChanged.connect(self.value_changed)
+        
         self.password_lenght.valueChanged.connect(self.lenght_changed) 
         self.pushButton.clicked.connect(self.upper_case)
         self.pushButton_2.clicked.connect(self.lower_case)
         self.pushButton_3.clicked.connect(self.add_digits)
         self.pushButton_4.clicked.connect(self.add_punc)
         self.pushButton_5.clicked.connect(self.del_uncorrect)
-        self.pushButton_6.clicked.connect(self.gen_password)
-        self.pushButton_7.clicked.connect(self.submit)
-        self.label_10.setText('')
-
-
-
-    def value_changed(self,value):
-        self.value = value
-        return(self.value)
-        
+        self.pushButton_7.clicked.connect(self.get_password)
+        self.lineEdit.setReadOnly(True)
+        self.lineEdit.setText('')
+       
 
     def lenght_changed(self,lenght):
         self.lenght = lenght
@@ -65,20 +61,20 @@ class Window(Ui_MainWindow,QMainWindow):
             self.chars = self.chars.replace(c, '')
         return self.chars
 
-        
-    def submit(self):
+     
+    def get_password(self):
+        self.passwords = ''
 
         for _ in range(self.lenght):
             self.passwords += random.choice(self.chars)
-        print(self.passwords, end = ' ')
-        print()
-            
+        print(self.passwords)
+        self.lineEdit.setText(self.passwords)
 
-    def gen_password(self):
-        pass     
+    
+          
+ 
+    
 
-
-        
     
     
             
