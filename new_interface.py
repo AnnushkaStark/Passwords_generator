@@ -12,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.setFixedSize(629, 476)
+        MainWindow.resize(629, 476)
         MainWindow.setStyleSheet("background-color: rgb(0, 170, 255);")
         MainWindow.setInputMethodHints(QtCore.Qt.InputMethodHint.ImhNoTextHandles)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
@@ -126,6 +126,19 @@ class Ui_MainWindow(object):
 "")
         self.pushButtonSubmit.setCheckable(False)
         self.pushButtonSubmit.setObjectName("pushButtonSubmit")
+        self.pushButton_Clear = QtWidgets.QPushButton(parent=self.widget)
+        self.pushButton_Clear.setGeometry(QtCore.QRect(330, 370, 161, 31))
+        self.pushButton_Clear.setContextMenuPolicy(QtCore.Qt.ContextMenuPolicy.CustomContextMenu)
+        self.pushButton_Clear.setAutoFillBackground(False)
+        self.pushButton_Clear.setStyleSheet("\n"
+"background-color: rgb(170, 0, 127);\n"
+"color: rgb(170, 255, 0);\n"
+"\n"
+"\n"
+"\n"
+"")
+        self.pushButton_Clear.setCheckable(False)
+        self.pushButton_Clear.setObjectName("pushButton_Clear")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 629, 22))
@@ -151,6 +164,7 @@ class Ui_MainWindow(object):
         self.pushButton_add_del_chars.setText(_translate("MainWindow", "Удалить спорные символы"))
         self.pushButton_generate.setText(_translate("MainWindow", "Сгенерировать"))
         self.pushButtonSubmit.setText(_translate("MainWindow", "Применить "))
+        self.pushButton_Clear.setText(_translate("MainWindow", "Очистить"))
 
 
 if __name__ == "__main__":

@@ -6,240 +6,345 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>610</width>
-    <height>794</height>
+    <width>629</width>
+    <height>476</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 170, 255);</string>
+  </property>
   <property name="inputMethodHints">
    <set>Qt::ImhNoTextHandles</set>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QSpinBox" name="password_lenght">
+   <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>40</y>
-      <width>101</width>
-      <height>22</height>
+      <x>10</x>
+      <y>10</y>
+      <width>591</width>
+      <height>431</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>0</y>
-      <width>231</width>
-      <height>16</height>
-     </rect>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 85, 127);</string>
     </property>
-    <property name="text">
-     <string>Длина пароля?</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>180</y>
-      <width>171</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Добавить заглавные буквы?</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>200</y>
-      <width>141</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>UpperCaseLatter</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>200</y>
-      <width>131</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>LowerCaseLatter</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>180</y>
-      <width>161</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string> Добавить строчные буквы?</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>200</y>
-      <width>151</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Add_digits</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>170</y>
-      <width>141</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Добавить цифры?</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>280</y>
-      <width>141</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Add_punctuation</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>250</y>
-      <width>181</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Добавить знаки пунктуации?</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_5">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>280</y>
-      <width>131</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Del_incorrect_chars</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_7">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>250</y>
-      <width>211</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Убрать спорные символы (l0OI) ?</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_7">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>400</y>
-      <width>151</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Submit</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_9">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>350</y>
-      <width>231</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>применить настройки и сгенерировать</string>
-    </property>
-   </widget>
-   <widget class="QListWidget" name="listWidget">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>241</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>Инструкция пользователя</string>
+    <widget class="QSpinBox" name="password_lenght">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
      </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>1 Выберите необходимую длину пароля</string>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 255, 255);
+alternate-background-color: rgb(170, 255, 0);
+gridline-color: rgb(0, 85, 255);
+color: rgb(0, 0, 255);
+border-radius: 5px</string>
      </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>2 Отметьте необходимые символы</string>
+    </widget>
+    <widget class="QSpinBox" name="password_count">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
      </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>3 Нажмите клавишу submit  чтобы создать пароль</string>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 255, 255);
+gridline-color: rgb(0, 85, 255);
+color: rgb(0, 0, 255);
+border-radius: 5px</string>
      </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>4 При каждом нажатии submit генерируется новый пароль с применнными вами настройками</string>
+    </widget>
+    <widget class="QLabel" name="label_2_pass_lenght">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
      </property>
-    </item>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>330</y>
-      <width>351</width>
-      <height>181</height>
-     </rect>
-    </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(170, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>Длина пароля?</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8_passs_count">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>90</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(170, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>Количество паролей ?</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_add_upper">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::CustomContextMenu</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(170, 0, 127);
+color: rgb(170, 255, 0);
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Добавить заглавые буквы</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_add_small">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>180</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(170, 255, 0);
+color: rgb(255, 85, 0);
+</string>
+     </property>
+     <property name="text">
+      <string>Добавить строчные буквы</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_add_digitts">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>230</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(255, 170, 0);
+color: rgb(0, 85, 255);
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Добавить цифры</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_add_punct">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>280</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">alternate-background-color: rgb(170, 255, 0);
+background-color: rgb(170, 0, 127);
+color: rgb(170, 255, 0);
+
+</string>
+     </property>
+     <property name="text">
+      <string>Добавить пунктуацию</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_add_del_chars">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>330</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(255, 170, 0);
+
+color: rgb(0, 85, 127);
+</string>
+     </property>
+     <property name="text">
+      <string>Удалить спорные символы</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_generate">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>20</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(170, 255, 0);
+color: rgb(170, 255, 0);
+
+border - width: 10 px;
+color: rgb(255, 0, 127);
+</string>
+     </property>
+     <property name="text">
+      <string>Сгенерировать</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>255</x>
+       <y>70</y>
+       <width>301</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 255, 255);
+</string>
+     </property>
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <property name="currentRow">
+      <number>-1</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonSubmit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>380</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(170, 255, 0);
+color: rgb(255, 85, 0);
+</string>
+     </property>
+     <property name="text">
+      <string>Применить </string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Clear">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>370</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::CustomContextMenu</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(170, 0, 127);
+color: rgb(170, 255, 0);
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Очистить</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -247,7 +352,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>610</width>
+     <width>629</width>
      <height>22</height>
     </rect>
    </property>
